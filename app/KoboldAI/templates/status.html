@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .charname {
+        grid-area: name;
+    }
+
+    .charrace {
+        grid-area: race;
+    }
+
+    .imagelogo {
+        grid-area: logo;
+    }
+
+    .states {
+        grid-area: state;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'name name logo logo'
+            'race race logo logo'
+            'state state state state'
+        ;
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+
+    .grid-container>div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="grid-container">
+    <div class="charname">Pright Trave</div>
+    <div class="charrace">Human</div>
+    <div class="imagelogo">LogoImage</div>
+    <div class="states">Statuses: None</div>
+
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .armour {
+        grid-area: armour;
+    }
+
+    .armourtype {
+        grid-area: type;
+    }
+
+    .armourpoints {
+        grid-area: points;
+    }
+
+    .armourcoverpoints {
+        grid-area: coverpoints;
+    }
+
+    .inventory {
+        grid-area: inventory;
+    }
+
+    .portrait {
+        grid-area: portrait;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 5%;
+        grid-template-rows: 5% min-content;
+        grid-template-areas:
+            'portrait portrait armour armour'
+            'portrait portrait type type'
+            'portrait portrait points points'
+            'portrait portrait coverpoints coverpoints'
+            'inventory inventory inventory inventory'
+        ;
+        gap: 5px;
+        background-color: #2196F3;
+        padding: 20px;
+    }
+
+    .grid-container>div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 0% 0;
+        font-size: 30px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 15px;
+        max-height: 20px
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="portrait"><img style="object-fit:contain;width: 40%;"
+                src="C:\Fantasy_Old_World\app\KoboldAI\static\images\portrait.png"></div>
+        <div class="armour" >Armour: None</div>
+        <div class="armourtype">None</div>
+        <div class="armourpoints">Armour Points: 0</div>
+        <div class="armourcoverpoints">Locations Covered: None </div>
+        <div class="inventory">
+            <ul>
+                <li>Dagger[E]</li>
+                <li>Buckler[E]</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
